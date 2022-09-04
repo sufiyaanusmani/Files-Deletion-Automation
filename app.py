@@ -1,6 +1,6 @@
 # File Deletion Automation
 # Author: Sufiyaan Usmani (https://github.com/sufiyaanusmani)
-# License:
+# License: GNU General Public License v2.0 (https://github.com/sufiyaanusmani/Files-Deletion-Automation/blob/main/LICENSE.md)
 
 import os
 from datetime import datetime
