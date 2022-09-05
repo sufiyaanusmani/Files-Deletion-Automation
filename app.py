@@ -11,10 +11,11 @@ toDelete = []
 
 
 def deleteFile(fileToDelete):
-    os.remove(fileToDelete)
-    now = datetime.now()
-    d = now.strftime("%d/%m/%Y %H:%M:%S")
-    print(f"{d}: Deleted {fileToDelete}")
+    if("system" not in str(fileToDelete).lower()):
+        os.remove(fileToDelete)
+        now = datetime.now()
+        d = now.strftime("%d/%m/%Y %H:%M:%S")
+        print(f"{d}: Deleted {fileToDelete}")
 
 
 if __name__ == "__main__":
